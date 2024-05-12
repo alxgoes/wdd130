@@ -80,7 +80,7 @@ section {
     position: relative; 
 }
 
-section img {
+section figure {
     max-width: 100%; 
     margin-bottom: 20px; 
 }
