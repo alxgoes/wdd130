@@ -1,49 +1,66 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.box {
-    margin: 1rem;
+.container {
+    max-width: 840px;
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+header, footer {
+    background-color: #665f5f;
+    color: #ffffff;
     padding: 1rem;
-    border: 2px solid #eeb8b8;
+    text-align: center; /* Center text in header and footer */
+}
+
+main {
+    background-color: #eeeeee;
+    padding: 1rem;
+}
+
+.grid {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    gap: 1rem;
+}
+
+.box {
     background-color: #fa9292;
-    color: #000000;
+    padding: 1rem;
 }
 
-.box img {
-    max-width:  100%;
-    height: auto;
-    margin-bottom: 20px;
+aside h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem; /* Add margin below h1 for spacing */
+    border-bottom: 2px solid black; /* Add bottom border to h1 */
 }
 
-main img {
-    width: 70px;
-    float:right;
-    margin: 1px;
-    
+nav.container {
+    display: flex; /* Use Flexbox for navigation */
+    justify-content: space-between; /* Evenly distribute items */
+    align-items: center; /* Align items vertically */
+    padding: 1rem;
 }
 
-aside {
-    position: relative;
-}
-
-aside h2 {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 5px;
-}
-
-footer nav {
-    margin-bottom: 10px;
-}
-
-footer nav a {
-    margin-right: 10px;
-    color: #000000;
+nav.container a {
+    display: inline-block;
+    padding: 0.5rem;
     text-decoration: none;
+    color: white;
+}
+
+nav.container a:hover {
+    background-color: #555555; /* Change background color on hover */
+}
+nav.container a:active {
+    background-color: #333333; /* Change background color on active */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem; /* Add margin below images for spacing */
 }
